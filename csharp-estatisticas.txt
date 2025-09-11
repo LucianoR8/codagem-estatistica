@@ -1,0 +1,171 @@
+using System;
+using System.Linq;
+using System.Globalization;
+
+
+namespace MyApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] dados;
+            double[] valores, xi, fi, fac, fri, frac, xifi;
+            double range, maior, menor, anterior, media, moda, mediana, soma;
+            int n, qtde;
+
+            n = 0;
+
+            Console.Write("Informe os dados: ");
+           
+            dados = Console.ReadLine().Split(' ');
+
+            foreach(string elemento in dados)
+            {
+                n++;
+            }
+
+            valores = new double[n];
+            xi = new double[n];
+            fi = new double[n];
+
+            for(int i = 0; i < n; i++)
+            {
+                valores[i] = double.Parse(dados[i]);
+            }
+
+            Array.Sort(valores);
+            maior = valores.Max();
+            menor = valores.Min();
+
+            range = maior - menor;
+
+            Console.WriteLine();
+            Console.Write("rol = ");
+
+            for(int i = 0; i < n; i++)
+            {
+                Console.Write(valores[i] + " ");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("amplitude = " + range);
+            Console.WriteLine("maior = " + maior);
+            Console.WriteLine("menor = " + menor);
+            Console.WriteLine("quantidade = " + n);
+
+            anterior = -1;
+            qtde = 0;
+
+            for(int i = 0; i < n; i++)
+            {
+                if (valores[i] == anterior)
+                {
+                    fi[qtde - 1]++;
+                }
+                else
+                {
+                    qtde++;
+                    if (i == 0)
+                    {
+                        xi[i] = valores[i];
+                        fi[i] = 1;
+                    }
+                    else
+                    {
+                        xi[qtde - 1] = valores[i];
+                        fi[qtde - 1] = 1;
+                    }
+                }
+
+                anterior = valores[i];
+            }
+
+            fac = new double[n];
+            fri = new double[n];
+            frac = new double[n];
+            xifi = new double[n];
+
+            for(int i = 0; i < n; i++)
+            {
+                if (i == 0)
+                {
+                    fac[i] += fi[i];
+                }
+                else
+                {
+                    fac[i] = fi[i] + fac[i - 1];
+                }
+            }
+
+            for(int i = 0; i < n; i++)
+            {
+                fri[i] = fi[i] / fac[qtde - 1] * 100.0;
+            }
+
+            for(int i = 0; i < n; i++)
+            {
+                if (i == 0)
+                {
+                    frac[i] += fri[i];
+                }
+                else
+                {
+                    frac[i] = fri[i] + frac[i - 1];
+                }
+            }
+
+            soma = 0.0;
+
+            for(int i = 0; i < n; i++)
+            {
+                xifi[i] = xi[i] * fi[i];
+                soma += xifi[i];
+            }
+
+            moda = 0.0;
+
+            for(int i = 0; i < n; i++)
+            {
+                if (fi[i] == fi.Max())
+                {
+                    moda = xi[i];
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Tabela sem intervalo de classes: ");
+            Console.WriteLine();
+
+            Console.Write("xi  | fi   | fac     | fri     | frac     | xi * fi");
+            Console.WriteLine();
+
+            for(int i = 0; i < qtde; i++)
+            {
+                Console.WriteLine(xi[i] + "     " + fi[i] + "       " + fac[i] + "        " + fri[i].ToString("F2", CultureInfo.InvariantCulture) + "%     " + frac[i].ToString("F2", CultureInfo.InvariantCulture) + "%     " + xifi[i]);
+            }
+
+
+            media = soma / n;
+            mediana = (n + 1) / 2.0;
+
+            Console.WriteLine("media = " + media.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("moda = " + moda.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("mediana = " + mediana.ToString("F2", CultureInfo.InvariantCulture));
+
+
+
+
+
+            Console.WriteLine();
+            
+
+            
+
+
+
+        }
+    }
+}
+
