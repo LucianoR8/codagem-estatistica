@@ -1,4 +1,4 @@
-# Trabalhando com estatisticas
+# Trabalhando com Estatística descritiva
 
 ## Objetivo
 
@@ -22,6 +22,8 @@ Próximo passo é incluir as Medidas separatizes e as de dispersão.
 ## Código-fonte
 
 - [C#](https://github.com/LucianoR8/codagem-estatistica/tree/master/codigo-fonte/Program.cs)
+
+---
 
 ### Sobre
 
