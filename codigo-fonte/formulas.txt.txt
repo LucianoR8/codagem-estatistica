@@ -1,0 +1,27 @@
+Principais formulas utilizadas no código
+
+Total da amostra = n
+
+Range = Maior valor da amostra - Menor valor da amostra
+Frequência acumulada(fac)* = Frequência acumulada + Frequência simples posterior
+Frequência relativa simples(fri) = Frequência simples / n * 100
+Frequência relativa acumulada(frac)* = Frequência relativa acumulada + Frequência relativa simples posterior
+
+N° de Classes(K) = Raiz quadrada do total da amostra, arredondando para o maior inteiro mais próximo
+Intervalo de classes(h) = Range / N° de Classes
+Ponto Médio(Pm) = (Limite inferior(li) + Limite Superior(Li)) / 2
+
+Média(Sem intervalo) = Σ(Somatório) Xi * Frequência simples / n
+Média(Com intervalo) = Σ(Somatório) Pm * Frequência simples / n
+
+Δ1 = Maior frequência simples da amostra - Frequência simples anterior
+Δ2 = Maior frequência simples da amostra - Frequência simples posterior
+Moda(Com intervalo)** = Limite inferior + (Δ1 / (Δ1 + Δ2) ) * h
+Moda(Sem intervalo) = Xi com maior frequência simples
+
+Mediana(Com intervalo)*** = Limite inferior + ((Total da amostra / 2 - Frequência acumulada anterior) / Frequência simples) * h
+Mediana(Sem intervalo) = (Total da amostra + 1) / 2
+
+* = Processo se repete pela quantidade de valores diferentes dentro da amostra fornecida
+** = Identificar a maior frequência simples primeiramente
+*** = Calcular a ordem primeiramente(n / 2) e antes de aplicar a formula, identificar pela frequência acumulada a classe que contém a mediana
