@@ -6,7 +6,7 @@ Repositório focado em desenvolver bom conhecimento sobre a área das estatistic
 
 ## Tecnologias
 
-As tecnologias que pretendo utilizar para desenvolvimento no conhecimento são as linguagens de programação Python e C#, e as principais ferramentas de software, como o Power Bi e o Excel.
+As tecnologias que pretendo utilizar para desenvolver habilidades em estatística descritiva são as linguagens de programação Python e C#, e as principais ferramentas de software, como o Power Bi e o Excel.
 
 ## Progresso
 
@@ -23,7 +23,9 @@ Próximo passo é incluir as Medidas separatizes e as de dispersão.
 
 - [C#](https://github.com/LucianoR8/codagem-estatistica/tree/master/codigo-fonte/Program.cs)
 
+### Sobre
 
+ - [Fórmulas](https://github.com/LucianoR8/codagem-estatistica/blob/master/codigo-fonte/formulas.txt)
 
 ---
 
