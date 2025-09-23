@@ -2,22 +2,22 @@
 
 ## Objetivo
 
-Repositório focado em desenvolver bom conhecimento sobre a área das estatisticas.
+Desenvolver conhecimento e prática com o uso de dados estatisticos.
 
 ## Tecnologias
 
-As tecnologias que pretendo utilizar para desenvolver habilidades em estatística descritiva são as linguagens de programação Python e C#, e as principais ferramentas de software, como o Power Bi e o Excel.
+Linguagens de programação como Python, R e C#, e as principais ferramentas de software, como o Power Bi e o Excel.
 
 ## Progresso
 
-No momento comecei a desenvolver os seguintes métodos que a Estatistica descritiva possui: 
+Atualmente o repositório contém um código-fonte desenvolvido com C# que fornece ao usuário os seguintes cálculos após o mesmo fornecer uma amostra de dados: 
 
  - Tabela sem intervalo de classes,
  - Tabela com intervalo de classes,
  - Mediadas de posição(média, moda e mediana),
  - Frequência simples, acumulada e as relativas(porcentagem)
 
-Próximo passo é incluir as Medidas separatizes e as de dispersão.
+Próximo passo é incluir as Medidas separatizes(Quartis, Decil e Percentil) e as de dispersão(Desvio médio, desvio padrão populacional e amostral e coeficiente de variação populacional e amostral).
 
 ## Código-fonte
 
