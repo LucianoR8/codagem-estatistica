@@ -6,7 +6,7 @@ Desenvolver conhecimento e prática com o uso de dados estatisticos.
 
 ## Tecnologias
 
-Linguagens de programação como Python, R e C#, e as principais ferramentas de software, como o Power Bi e o Excel.
+Linguagem de programação C#(atualmente), e futuramente as principais ferramentas de software, como o Power Bi e o Excel e a ferramentas web como o HTML, CSS e JS.
 
 ## Progresso
 
